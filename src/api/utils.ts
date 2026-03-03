@@ -72,7 +72,7 @@ export async function parseXML(xml: string): Promise<any> {
       mergeAttrs: true,
       trim: true,
       normalizeTags: false,
-      explicitRoot: false
+      explicitRoot: true
     });
   } catch (error) {
     throw new Error(`XML parsing error: ${error instanceof Error ? error.message : 'Unknown error'}`);
